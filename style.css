@@ -126,6 +126,7 @@ img {
 .nav-links a {
     font-weight: 500;
     font-size: 0.95rem;
+    color: white;
     position: relative;
     transition: color 0.3s;
 }
@@ -170,13 +171,13 @@ img {
 
 .btn-outline {
     background: transparent;
-    border: 2px solid var(--primary);
-    color: var(--primary);
+    border: 2px solid white;
+    color: white;
 }
 
 .btn-outline:hover {
-    background: var(--primary);
-    color: white;
+    background: white;
+    color: #0f172a;
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--primary-glow);
 }
