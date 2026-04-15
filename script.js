@@ -1,12 +1,12 @@
 /* =========================================================================
-   Antigravity Alumni Network - Main JS
+   Presentation HSS Alumni Network - Main JS
    ========================================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
 
     /* --- Navbar Scroll Effect & Smooth Scrolling --- */
     const navbar = document.querySelector('.navbar');
-    
+
     // Add glass background on scroll
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
             navLinks.classList.toggle('show');
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- Intersection Observer for Scroll Animations --- */
     const faders = document.querySelectorAll('.fade-in-on-scroll');
-    
+
     const appearOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
                 return;
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* --- Modal Functionality --- */
     const openModalButtons = document.querySelectorAll('[data-modal-target]');
     const closeButtons = document.querySelectorAll('[data-modal-close]');
-    
+
     openModalButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const originalText = btn.innerHTML;
             btn.innerHTML = 'Success!';
             btn.style.background = '#10b981'; // Green
-            
+
             setTimeout(() => {
                 btn.innerHTML = originalText;
                 btn.style.background = '';

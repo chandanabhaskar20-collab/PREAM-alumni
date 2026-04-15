@@ -1,6 +1,6 @@
 /* =========================================================================
-   Antigravity Alumni Network Theme
-   Author: Antigravity AI
+   Presentation HSS Alumni Network Theme
+   Author: Presentation HSS AI
    Description: A modern, clean, floating design with soft shadows and glassmorphism.
    ========================================================================= */
 
@@ -26,7 +26,7 @@
     --glass-border: 1px solid rgba(255, 255, 255, 0.5);
     --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
-    /* Shadows - "Antigravity" feeling */
+    /* Shadows - "Presentation HSS" feeling */
     --shadow-soft: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 20px 40px -10px rgba(59, 130, 246, 0.25);
 
@@ -92,6 +92,24 @@ img {
     padding: 15px 5%;
 }
 
+.navbar.scrolled .nav-links a {
+    color: var(--text-main);
+}
+
+.navbar.scrolled .btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.navbar.scrolled .btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.nav-links a {
+    color: var(--text-main);
+}
+
 .nav-brand {
     display: flex;
     align-items: center;
@@ -126,7 +144,7 @@ img {
 .nav-links a {
     font-weight: 500;
     font-size: 0.95rem;
-    color: white;
+    color: var(--text-main);
     position: relative;
     transition: color 0.3s;
 }
@@ -256,7 +274,7 @@ img {
     color: var(--text-muted);
 }
 
-/* ================= Cards ("Antigravity" Effect) ================= */
+/* ================= Cards ("Presentation HSS" Effect) ================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -715,4 +733,19 @@ tr:hover td {
     .admin-main {
         margin-left: 0;
     }
+}
+
+/* Default = dark text (for all pages) */
+.nav-links a {
+    color: rgb(107, 248, 7);
+}
+
+/* ONLY for homepage */
+body.home .navbar:not(.scrolled) .nav-links a {
+    color: white;
+}
+
+body.home .navbar:not(.scrolled) .btn-outline {
+    border: 2px solid white;
+    color: white;
 }
